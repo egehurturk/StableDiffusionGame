@@ -1,7 +1,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 
 /* The Modal (background) */
-.modal {
+.c-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -21,7 +21,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   }
   
   /* Modal Content */
-  .modal-content {
+  .c-modal-content {
     position: fixed;
     bottom: 0;
     margin: auto;
@@ -52,14 +52,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
     cursor: pointer;
   }
   
-  .modal-header {
+  .c-modal-header {
     padding: 2px 16px;
     text-align: center;
     background-color: #5cb85c;
     color: white;
   }
   
-  .modal-body {padding: 2px 16px;}
+  .c-modal-body {padding: 2px 16px;}
   
   /* Add Animation */
   @-webkit-keyframes slideIn {
