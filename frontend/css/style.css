@@ -24,6 +24,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     position: fixed;
     bottom: 0;
     margin: auto;
+    margin-top: 10%;
     margin-bottom: 30%;
     margin-left: 10%;
 
@@ -52,17 +53,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
   
   .modal-header {
     padding: 2px 16px;
+    text-align: center;
     background-color: #5cb85c;
     color: white;
   }
   
   .modal-body {padding: 2px 16px;}
-  
-  .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-  }
   
   /* Add Animation */
   @-webkit-keyframes slideIn {
