@@ -19,6 +19,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
     animation-name: fadeIn;
     animation-duration: 0.4s
   }
+
+  @media screen and (min-width: 765px) and (max-width: 994px) {
+    .screenSizeChanged {
+      margin-left: 10%;
+    }
+  }
   
   /* Modal Content */
   .c-modal-content {
