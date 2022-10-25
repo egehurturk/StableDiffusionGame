@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+    <style>
+      #grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 18.888vh 71.94vh 9.16vh;
+        background-color: aquamarine;
+      }
+      #title {
+        text-align: center;
+      }
+      #images-container {
+        display:grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto ;
+      }
+      .game-image {
+        background-color: red;
+      }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Page Title</title>
 
     <!-- Theme Color for Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#4285f4" />
+    <meta name="theme-color" content="#a283e4" />
 
     <!-- Short description of the document (limit to 150 characters) -->
     <!-- This content *may* be used as a part of search engine results. -->
@@ -25,8 +44,6 @@
     <!-- Bing Webmaster Center -->
     <meta name="alexaVerifyID" content="verification_token" />
     <!-- Alexa Console -->
- 
-
 
     <!-- Short description of your document's subject -->
     <meta name="subject" content="your document's subject" />
@@ -37,11 +54,6 @@
     <!-- Allows control over how referrer information is passed -->
     <meta name="referrer" content="no-referrer" />
 
-    <meta name="geo.region" content="country[-state]" />
-    <!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-    <meta name="geo.placename" content="city/town" />
-    <!-- eg. content="New York City" -->
-
     <!-- Prefetching, preloading, prebrowsing -->
     <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
     <link rel="dns-prefetch" href="//example.com/" />
@@ -49,10 +61,34 @@
     <link rel="prefetch" href="https://www.example.com/" />
     <link rel="prerender" href="https://example.com/" />
     <link rel="preload" href="image.png" as="image" />
-
-   
   </head>
   <body>
+    <div id="grid-container">
+      <div id="grid1"></div>
+      <div id="grid2">
+        <h1 id="title">IMAGLE</h1>
+      </div>
+      <div id="grid3"></div>
+      <div id="grid4"></div>
 
+
+
+      <div id="grid5">
+        <div id="images-container">
+          <div class="game-image"> <img src="/Users/erenmenges/Desktop/KODLAMA/VScode/StableDiffusionGame/frontend/unnamed (1).png" alt="img1"></div>
+          <div class="game-image"></div>
+          <div class="game-image"></div>
+          <div class="game-image"></div>
+        </div>
+      </div>
+
+
+
+      <div id="grid6"></div>
+      <div id="grid7"></div>
+      <div id="grid8">
+      </div>
+      <div id="grid9"></div>
+    </div>
   </body>
 </html>
