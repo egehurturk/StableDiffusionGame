@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
-    <style>
-      #grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: 18.888vh 71.94vh 9.16vh;
-        background-color: aquamarine;
-      }
-      #title {
-        text-align: center;
-      }
-      #images-container {
-        display:grid;
-        grid-template-columns: auto auto ;
-        grid-template-rows: auto auto ;
-      }
-      .game-image {
-        background-color: red;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -70,24 +52,16 @@
       </div>
       <div id="grid3"></div>
       <div id="grid4"></div>
-
-
-
       <div id="grid5">
-        <div id="images-container">
-          <div class="game-image"> <img src="/Users/erenmenges/Desktop/KODLAMA/VScode/StableDiffusionGame/frontend/unnamed (1).png" alt="img1"></div>
-          <div class="game-image"></div>
-          <div class="game-image"></div>
-          <div class="game-image"></div>
-        </div>
+        <div id="game-image-container1"><img id="game-image1" src="./sample1.png" ></div>
+        <div id="game-image-container2"><img id="game-image2" src="./sample2.png"></div>
+        <div id="game-image-container3"><img id="game-image3" src="./sample3.jpg"></div>
+        <div id="game-image-container4"><img id="game-image4" src="./sample4.jpg"></div>
+        <div id="inputbox"></div>
       </div>
-
-
-
       <div id="grid6"></div>
       <div id="grid7"></div>
-      <div id="grid8">
-      </div>
+      <div id="grid8"></div>
       <div id="grid9"></div>
     </div>
   </body>

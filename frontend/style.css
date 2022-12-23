@@ -1,0 +1,64 @@
+#grid-container {
+  display: grid;
+  grid-template-columns: 33.33vw 33.33vw 33.33vw;
+  grid-template-rows: 18.888vh 71.94vh 9.16vh;
+}
+#title {
+  text-align: center;
+}
+#grid1 {
+  background-color: gray;
+}
+#grid2 {
+  background-color: darkcyan;
+}
+#grid3 {
+  background-color: lightgreen;
+}
+#grid4 {
+  background-color: purple;
+}
+#grid5 {
+  display: grid;
+  grid-template-columns: repeat(2, 16.65vw) repeat(3, 1fr);
+  grid-template-rows: repeat(2, 28.77vh) 14.4vh repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#grid6 {
+  background-color: blue;
+}
+#grid7 {
+  background-color: orange;
+}
+#grid8 {
+  background-color: yellow;
+}
+#grid9 {
+  background-color: green;
+}
+
+#game-image-container1 {
+  background-color: red;
+  grid-area: 1 / 1 / 2 / 2;
+}
+#game-image-container2 {
+  background-color: lightcoral;
+  grid-area: 1 / 2 / 2 / 3;
+}
+#game-image-container3 {
+  background-color: darkred;
+  grid-area: 2 / 1 / 3 / 2;
+}
+#game-image-container4 {
+  background-color: lightsalmon;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#game-image1 {
+}
+
+#inputbox {
+  background-color: green;
+  grid-area: 3 / 1 / 4 / 3;
+}
