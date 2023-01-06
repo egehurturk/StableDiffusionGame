@@ -85,4 +85,5 @@ if __name__ == "__main__":
     size = sys.argv[2]
     n = int(sys.argv[3])
     to =  sys.argv[4] if len(sys.argv) == 5  else "."
-    download_image_from(extract_image_url(generate_image(prompt, size = size, n = n)), to=to)
+    data = extract_image_url(generate_image(prompt, size = size, n = n))
+    download_image_from(data, to=to)
