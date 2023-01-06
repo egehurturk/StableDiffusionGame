@@ -6,8 +6,13 @@ except ImportError as err:
     exit()
 
 import os
+from pathlib import Path
 import requests
 import sys
+
+
+
+SCRIPT_DIR = str(Path(__file__).parent.resolve())
 
 def _get_env_data_as_dict(path: str) -> dict:
     with open(path, 'r') as f:
@@ -15,7 +20,9 @@ def _get_env_data_as_dict(path: str) -> dict:
                 in f.readlines() if not line.startswith('#'))
 
 
-OPENAI_API_KEY = _get_env_data_as_dict(".env")["OPENAI_API_KEY"]
+
+
+OPENAI_API_KEY = _get_env_data_as_dict(str(SCRIPT_DIR) + "/.env")["OPENAI_API_KEY"]
 openai.api_key = OPENAI_API_KEY
 IMG_COUNTER = 0
 
