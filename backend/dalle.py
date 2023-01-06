@@ -40,7 +40,9 @@ def generate_image(prompt: str, size: str = "256x256", n:int = 1) -> dict:
 
 def extract_image_url(data: dict) -> str:
     if len(data["data"]) == 1:
-        return data["data"][0]["url"]
+        l = []
+        l.append(data["data"][0]["url"])
+        return l
     else:
         return [url["url"] for url in data["data"]]
 
@@ -77,12 +79,11 @@ def download_image_from(image_urls: list, to: str = "."):
     Returns:
     None
     """
-
     if (not os.path.isdir(to)):
         os.makedirs(to)
-
     for url in image_urls:
         _download_single_image(url, to)
+    return to
     
 
 if __name__ == "__main__":
